@@ -40,11 +40,13 @@ renderDish(dish) {
   }
 
   render() {
-    const seletedDish = this.props.seletedDish
-    if (seletedDish != null){
+    const dish = this.props.dish
+    if (dish != null) {
       return(
-        <div>
-          {this.renderDish(seletedDish)}
+        <div className="container">
+          <div>
+            {this.renderDish(dish)}
+          </div>
         </div>);
     }
     else {
